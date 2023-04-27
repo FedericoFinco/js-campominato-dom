@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #222;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+main{
+    flex-grow: 1;
+    background-color: #424242;
+}
+
+header{
+    
+}
+
+footer{
+    
+}
+
+footer > .container{
+    background-color: rgb(72, 71, 5);
+    max-width: 1180px;
+    margin: 30px auto;
+}
+
+.containerHead{
+    max-width: 1180px;
+    margin: 30px auto;
+    background-color: rgb(5, 72, 72);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.containerHead img {
+    display: block;
+    margin-left: 2rem;
+}
+
+.containerHead button{
+    margin-right: 2rem;
+    border-radius: 5px;
+    padding: 0.3rem 1rem;
+}
+
+#mainGrid{
+    max-width: 1180px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.result{
+    position: absolute;
+    top: 50%;
+    right: 0px;
+}
+
+.grid{
+    border: 1px solid white;
+    height: 70vh;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.clicked{
+    background-color: rgb(0, 125, 125);
+}
+.bomba{
+    background-color: brown;
+}
+
+div.grid .square{
+    border: 1px solid white;
+    cursor: crosshair;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.box100{
+    width: calc(100%/10);
+    height: calc(100%10);
+}
+
+.box81{
+    width: calc(100%/9);
+    height: calc(100%9);
+}
+
+.box49{
+    width: calc(100%/7);
+    height: calc(100%7);
+}
+
+
+/*** UTILITY ***/
+
+.flex{
+    display: flex;
+}
+
+.alignItemsCenter{
+    align-items: center;
+}
+
+.justifyContentCenter{
+    justify-content: center;
+}
+
+.gap1{
+    gap: 1rem;
+}
